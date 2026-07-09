@@ -33,6 +33,22 @@ public class Stringpractise {
 System.out.println("hashcode:"+s.hashCode());
        System.out.println("indent:"+s.indent(5));
        System.out.println(s.indent(6));
+
+
+String s="welcome";
+		System.out.println("charAt:"+s.charAt(3));
+		System.out.println("codepoint At:"+s.codePointAt(2));
+		System.out.println("codepoint before:"+s.codePointBefore(1));
+		System.out.println("compare to:"+s.compareTo("welcome"));
+		System.out.println("compare to ignorecase:"+s.compareToIgnoreCase("wel"));
+		System.out.println("concat:"+s.concat("java"));
+		System.out.println("contains java:"+s.contains("comp"));
+		System.out.println("contentequals:"+s.contentEquals("welcome"));
+        System.out.println("endswith:"+s.endsWith("e"));
+        System.out.println("equalsignore case:"+s.equalsIgnoreCase("welcome"));
+	
+
+}}
 (OUTPUT)=>original:java programming
 Length:16
 character at index 2:p
@@ -57,3 +73,13 @@ hashcode:506452715
 indent:     Name:%s, Age:%d
 
       Name:%s, Age:%d
+charAt:c
+codepoint At:108
+codepoint before:119
+compare to:0
+compare to ignorecase:4
+concat:welcomejava
+contains java:false
+contentequals:true
+endswith:true
+equalsignore case:true
