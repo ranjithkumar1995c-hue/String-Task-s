@@ -280,3 +280,24 @@ public static void main(String[] args) {
 }}
 (OUTPUT)=>joinmeeting@7pm
  welcomehome.
+// Task No:9.
+//Count number of words in a string
+public static int countwords(String str) {
+	if(str==null||str.trim().isEmpty()) {
+		return 0;
+	}
+	int count=1;
+	for(int i=0;i<str.length()-1;i++) {
+		if(str.charAt(i)==' ' && str.charAt(i+1)!=' ') {
+			count++;
+		}}
+	return count;
+		
+	}
+public static void main(String[] args) {
+	System.out.println(countwords("welcome home"));
+	System.out.println(countwords("Advance full stack"));
+	System.out.println(countwords("web designing"));
+	System.out.println(countwords("Note J++ js"));
+}}
+(OUTPUT)=>(2,3,2,3).
