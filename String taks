@@ -112,3 +112,22 @@ insert:javaPcorerogramming
 Replace:javaPAdvancedrogramming
 Delete:javaProgramming
 Reverse:gnimmargorPavaj
+
+
+
+
+package NewString;
+
+public class Stringtasks {
+//Task No:1	
+//	Reverse a string.
+public static void main(String[] args) {
+	String S="H E L L O";
+	String reversed=new StringBuilder(S).reverse().toString();
+	System.out.println(reversed);
+		
+
+	}
+
+}
+(OUTPUT)=>O L L E H.
