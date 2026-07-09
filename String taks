@@ -221,3 +221,23 @@ public static void main(String[] args) {
 		System.out.println(countcharacters("java"));
 }}
 (OUT PUT)=>(5,4).
+/ Task No:6.
+//Convert string to uppercase without using toUpperCase().
+	public static String toupper(String str) {
+		String result="";
+		for(int i=0;i<str.length();i++) {
+			char ch=str.charAt(i);
+			if(ch>='a'&&ch<='z') {
+				ch=(char)(ch-32);
+			}
+			result +=ch;
+		}
+		return result;
+	}
+		public static void main(String[] args) {
+			System.out.println(toupper("welcome our service"));
+			System.out.println(toupper("introducejavacourse"));
+	
+}}
+(OUTPUT)=>WELCOME OUR SERVICE
+INTRODUCEJAVACOURSE.
