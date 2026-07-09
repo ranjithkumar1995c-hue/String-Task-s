@@ -318,3 +318,21 @@ public static void main(String[] args) {
 	
 }}
 (OUTPUT)=>(1 4 6).
+// Task No:11.
+//Find last occurrence of a character.	
+	public static int lastoccurrence(String str,char ch) {
+	for(int i=str.length()-1;i>=0;i--) {
+		if(str.charAt(i)==ch) {
+			return i;
+		}
+	}
+	return-1;
+}
+public static void main(String[] args) {
+	System.out.println(lastoccurrence("tomorrow",'w'));
+	System.out.println(lastoccurrence("Nextweek",'x'));
+	System.out.println(lastoccurrence("yesterday",'t'));
+
+
+}}
+(OUTPUT)=>(7 2 3).
