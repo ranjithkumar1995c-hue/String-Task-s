@@ -30,6 +30,9 @@ public class Stringpractise {
 //        %s=>String,%d=>Number.
 //        %f=>float=>%d=>Format specifier.		
         System.out.println("formatted:"+s.format("ranjith", "28"));
+System.out.println("hashcode:"+s.hashCode());
+       System.out.println("indent:"+s.indent(5));
+       System.out.println(s.indent(6));
 (OUTPUT)=>original:java programming
 Length:16
 character at index 2:p
@@ -50,3 +53,7 @@ content Equals:false
 ends with:true
 equalsignorecase:true
 formatted:ranjith.
+hashcode:506452715
+indent:     Name:%s, Age:%d
+
+      Name:%s, Age:%d
