@@ -201,3 +201,23 @@ public static void main(String[] args) {
 }}
 
 (OUTPUT)=>(7 2).
+// Task No:5.
+//Count total characters in a string (without using length()).
+	public static int countcharacters(String str) {
+		int count=0;
+		try {
+			while(true) {
+				str.charAt(count);
+				count++;
+			}
+		}
+		catch(StringIndexOutOfBoundsException e) {
+			
+		}
+		return count;
+	}
+	public static void main(String[] args) {
+		System.out.println(countcharacters("Hello"));
+		System.out.println(countcharacters("java"));
+}}
+(OUT PUT)=>(5,4).
