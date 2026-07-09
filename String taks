@@ -1,1 +1,47 @@
+package NewString;
 
+public class Stringpractise {
+ // String practise.
+ // String is a sequence of characters.
+	public static void main(String[] args) {
+		String S="Java";
+		 S=S+"Programming";
+		String s="java programming";
+		System.out.println("original:"+s);
+		System.out.println("Length:"+s.length());
+		System.out.println("character at index 2:"+s.charAt(5));
+		System.out.println("substring:"+s.substring(3,10));
+		System.out.println("uppercase:"+s.toUpperCase());
+		System.out.println("lowercase:"+s.toLowerCase());
+		System.out.println("contains java:"+s.concat("python"));
+		System.out.println("starts with java:"+s.startsWith("python"));
+    System.out.println("Ends with java:"+s.endsWith("ing"));
+    System.out.println("replace:"+s.replace("java", "python"));
+    System.out.println("index of a:"+s.indexOf("v"));
+    System.out.println("lase index of a:"+s.lastIndexOf("g"));
+    System.out.println("concat:"+s.concat("words"));
+    System.out.println("Trim:"+"  Hello ".trim());
+    System.out.println("Equals:"+s.equals("Java programming"));
+    System.out.println("compare to:"+"ABC".compareTo("ABD"));
+     System.out.println("content Equals:"+s.contentEquals("welcome"));
+        System.out.println("ends with:"+s.endsWith("g"));
+        System.out.println("equalsignorecase:"+s.equals("java programming"));
+(OUTPUT)=>original:java programming
+Length:16
+character at index 2:p
+substring:a progr
+uppercase:JAVA PROGRAMMING
+lowercase:java programming
+contains java:java programmingpython
+starts with java:false
+Ends with java:true
+replace:python programming
+index of a:2
+lase index of a:15
+concat:java programmingwords
+Trim:Hello
+Equals:false
+compare to:-1
+content Equals:false
+ends with:true
+equalsignorecase:true
