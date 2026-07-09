@@ -301,3 +301,20 @@ public static void main(String[] args) {
 	System.out.println(countwords("Note J++ js"));
 }}
 (OUTPUT)=>(2,3,2,3).
+// Task No:10.
+//Find first occurrence of a character.
+	public static int firstoccurrence(String str,char ch) {
+		for(int i=0;i<str.length();i++) {
+			if(str.charAt(i)==ch) {
+				return i;
+			}
+		}
+		return-1;
+	}
+	public static void main(String[] args) {
+		System.out.println(firstoccurrence("tomorrow",'o'));
+		System.out.println(firstoccurrence("Nextweek",'w'));
+		System.out.println(firstoccurrence("yesterday",'d'));
+	
+}}
+(OUTPUT)=>(1 4 6).
