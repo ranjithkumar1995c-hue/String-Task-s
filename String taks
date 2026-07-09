@@ -24,8 +24,12 @@ public class Stringpractise {
     System.out.println("Equals:"+s.equals("Java programming"));
     System.out.println("compare to:"+"ABC".compareTo("ABD"));
      System.out.println("content Equals:"+s.contentEquals("welcome"));
-        System.out.println("ends with:"+s.endsWith("g"));
-        System.out.println("equalsignorecase:"+s.equals("java programming"));
+     System.out.println("ends with:"+s.endsWith("g"));
+    System.out.println("equalsignorecase:"+s.equals("java programming"));
+        String s="Name:%s Age:%d";
+//        %s=>String,%d=>Number.
+//        %f=>float=>%d=>Format specifier.		
+        System.out.println("formatted:"+s.format("ranjith", "28"));
 (OUTPUT)=>original:java programming
 Length:16
 character at index 2:p
@@ -45,3 +49,4 @@ compare to:-1
 content Equals:false
 ends with:true
 equalsignorecase:true
+formatted:ranjith.
