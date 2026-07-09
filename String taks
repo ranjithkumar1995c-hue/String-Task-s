@@ -46,6 +46,28 @@ String s="welcome";
 		System.out.println("contentequals:"+s.contentEquals("welcome"));
         System.out.println("endswith:"+s.endsWith("e"));
         System.out.println("equalsignore case:"+s.equalsIgnoreCase("welcome"));
+// String Buffer:-
+	String Buffer means new object creating purpose.
+		StringBuffer Sb=new StringBuffer();
+		System.out.println(Sb.capacity());
+		StringBuffer Sb=new StringBuffer("java");
+		System.out.println(Sb);
+		Sb.append("Programming");
+		System.out.println("Append:"+Sb);
+		Sb.insert(5, "core");
+		System.out.println("insert:"+Sb);
+		Sb.replace(5, 9, "Advanced");
+		System.out.println("Replace:"+Sb);
+		Sb.delete(5, 13);
+		System.out.println("Delete:"+Sb);
+		Sb.reverse();
+		System.out.println("Reverse:"+Sb);
+		
+		
+		
+		
+}}
+
 	
 
 }}
@@ -83,3 +105,10 @@ contains java:false
 contentequals:true
 endswith:true
 equalsignore case:true
+16
+java
+Append:javaProgramming
+insert:javaPcorerogramming
+Replace:javaPAdvancedrogramming
+Delete:javaProgramming
+Reverse:gnimmargorPavaj
