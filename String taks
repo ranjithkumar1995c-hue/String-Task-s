@@ -386,3 +386,24 @@ public static void main(String[] args) {
 	
 }}
 (OUTPUT)=>(YesterdayTommorrow).
+// Task No:16.	
+//Remove duplicate characters from string.
+	public static String removeduplicatecharacters(String str) {
+		if(str==null||str.isEmpty()) {
+			return str;
+		}
+		StringBuilder result=new StringBuilder();
+		for(char ch:str.toCharArray()) {
+			if(result.indexOf(String.valueOf(ch))==-1){
+				result.append(ch);
+			}
+		}
+	return result.toString();
+	}
+	public static void main (String[] args) {
+		System.out.println(removeduplicatecharacters("javais createdcourse"));
+
+		System.out.println(removeduplicatecharacters("javaprogramming"));
+}}
+(OUTPUT)=>javis cretdou
+javprogmin
