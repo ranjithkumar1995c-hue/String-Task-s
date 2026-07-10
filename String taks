@@ -361,3 +361,16 @@ public static void main(String[] args) {
 	
 }}
 (OUTPUT)=>(True,False,False).
+//Task No:14
+//Compare two strings without using equals().
+	public static boolean arestringsequal(String S1,String S2) {
+		return S1 != null && S2!=null && S1.compareTo(S2)==0;
+	}
+	public static void main(String[] args) {
+		System.out.println(arestringsequal("java","java"));
+		System.out.println(arestringsequal("python","Python"));
+		System.out.println(arestringsequal("course","Course"));
+		
+	
+}}
+(OUTPUT)=>(True,False,False).
