@@ -407,3 +407,18 @@ public static void main(String[] args) {
 }}
 (OUTPUT)=>javis cretdou
 javprogmin
+//Task No:17.
+//Find frequency of each character.
+	public static Map<Character,Integer>findcharacterFrequency(String str) {
+		Map<character;integer>frequencyMap=new HashMap<>();}
+		for(char ch:str.toCharArray()) {
+			frequencyMap.put(ch,frequencyMap.getorDefault(ch,0)+1);
+		}
+		return frequencyMap;
+	}
+	public static void main (String[] args) {
+		Map<Character, Integer> result = findcharacterFrequency("inspectionorders");
+		System.out.println(result);
+	
+}}
+(OUTPUT)=>{i=1,n=2,s=1,p=2,e=1,c=2,t=1,i=1}.
