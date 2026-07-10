@@ -348,3 +348,16 @@ public static void main(String[] args) {
 		
 }}
 (OUTPUT)=>-H-e-l-l-o- -w-o-r-l-d- -p-y-t-h-o-n-
+// Task No:13
+//Check whether string contains only digits.
+	public static boolean containgonlyDigits(String str) {
+		return str!=null&&str.matches("\\d+");}
+		public static void main(String[] args) {
+			
+			System.out.println(containgonlyDigits("12345"));
+			System.out.println(containgonlyDigits("123a"));
+			System.out.println(containgonlyDigits("Hellor12"));
+		
+	
+}}
+(OUTPUT)=>(True,False,False).
