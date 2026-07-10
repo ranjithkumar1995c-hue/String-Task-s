@@ -336,3 +336,15 @@ public static void main(String[] args) {
 
 }}
 (OUTPUT)=>(7 2 3).
+// Task No:12.
+//Replace all spaces with hyphen (-).	
+//	public static void main(String[] args) {
+	public static String replacespaceswithHyphen(String text) {
+		return text.replace("", "-");}
+		public static void main(String[] args) {	
+		String input="Hello world python";
+		String output=replacespaceswithHyphen(input);
+		System.out.println(output);
+		
+}}
+(OUTPUT)=>-H-e-l-l-o- -w-o-r-l-d- -p-y-t-h-o-n-
