@@ -374,3 +374,15 @@ public static void main(String[] args) {
 	
 }}
 (OUTPUT)=>(True,False,False).
+// Task No:15.
+//Concatenate two strings without using + operator.	
+	public static String concatenate(String S1,String S2) {
+		return S1.concat(S2);
+	}
+	public static void main (String[] args) {
+		String result=concatenate("Yesterday","Tommorrow");
+		System.out.println(result);
+		
+	
+}}
+(OUTPUT)=>(YesterdayTommorrow).
