@@ -556,3 +556,35 @@ javprogmin.
 }}
 (OUTPUT)=>original String:welcome
 After Removing'o':welcme
+/ Task No:23.
+//Find second most frequent character.
+	public static char secondmostFrequent(String str) {
+		HashMap<Character,Integer>map=new HashMap<>();
+		for(char ch:str.toCharArray()) {
+			map.put(ch,map.getOrDefault(ch,0)+1);
+		}
+		int first=0,Second=0;
+		char firstchar='\0',secondchar='\0';
+		for(char ch:map.keySet()) {
+			int count=map.get(ch);
+			if (count>first) {
+				Second=first;
+				Second=firstchar;
+				first=count;
+				firstchar=ch;}
+			else if(count>Second&&count<first) {
+				Second=count;
+				secondchar=ch;
+			}}
+		return secondchar;
+	}
+	public static void main (String[] args) {
+		String str="success";
+     char result=secondmostFrequent(str);
+     if(result!='\0') {
+    	 System.out.println("secondmostFrequent Character:"+result);
+    	 }else {
+    		 System.out.println("NosecondmostFrequent characterfound.");
+    	 }
+}}
+(OUTPUT)=>secondmostFrequent Character:c
