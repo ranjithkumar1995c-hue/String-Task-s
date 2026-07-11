@@ -541,3 +541,18 @@ javprogmin.
 	
 }}
 (OUTPUT)=>The strings are anagram.
+//	Task NO:22.	
+//	Remove a specific character from string.
+	public static String removeCharacter(String str,char ch) {
+		return str.replace(String.valueOf(ch), "");
+	}
+	public static void main (String[] args) {
+		String str="welcome";
+		char ch='o';
+		String result=removeCharacter(str,ch);
+		System.out.println("original String:"+str);
+		System.out.println("After Removing'"+ch+"':"+result);
+		
+}}
+(OUTPUT)=>original String:welcome
+After Removing'o':welcme
