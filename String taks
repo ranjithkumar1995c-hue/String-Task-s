@@ -491,3 +491,25 @@ public static void main (String[] args) {
 }}
 (OUTPUT)=>javis cretdou
 javprogmin.
+//	Task No:20.
+//Reverse each word in a sentence.
+	public static String reverseprinteachword(String eachword) {
+		if(eachword==null||eachword.isEmpty()) {
+			return eachword;
+		}
+		StringBuilder result=new StringBuilder();
+		for(char ch:eachword.toCharArray()) {
+			if(result.indexOf(String.valueOf(ch))==-1){
+				result.append(ch);
+			}
+		}
+	return result.toString();
+	}
+	public static void main (String[] args) {
+		System.out.println(reverseprinteachword("javais createdcourse"));
+
+		System.out.println(reverseprinteachword("javaprogramming"));
+	
+}}
+(OUTPUT)=>javis cretdou
+javprogmin.
