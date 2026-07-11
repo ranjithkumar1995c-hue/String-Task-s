@@ -469,3 +469,25 @@ public static void main (String[] args) {
 	System.out.println(Findlargestword(sentence));
 }}
 (OUTPUT)=>programming.
+//Task No:19.
+//	Print each word on new line.
+	public static String printeachword(String eachword) {
+		if(eachword==null||eachword.isEmpty()) {
+			return eachword;
+		}
+		StringBuilder result=new StringBuilder();
+		for(char ch:eachword.toCharArray()) {
+			if(result.indexOf(String.valueOf(ch))==-1){
+				result.append(ch);
+			}
+		}
+	return result.toString();
+	}
+	public static void main (String[] args) {
+		System.out.println(printeachword("javais createdcourse"));
+
+		System.out.println(printeachword("javaprogramming"));
+	
+}}
+(OUTPUT)=>javis cretdou
+javprogmin.
