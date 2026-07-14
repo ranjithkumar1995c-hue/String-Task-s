@@ -588,3 +588,13 @@ After Removing'o':welcme
     	 }
 }}
 (OUTPUT)=>secondmostFrequent Character:c
+// Task No:24.
+//	Print all substrings of a string.
+	public static void main (String[] args) {
+	String S="Java";
+    S=S+"Programming";
+    String s="java programming";
+    System.out.println("substring:"+s.substring(3,16));
+	
+}}
+(OUTPUT)=>substring:a programming.
