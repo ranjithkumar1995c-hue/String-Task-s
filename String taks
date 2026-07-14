@@ -711,3 +711,24 @@ public static void main (String[] args) {
 Lowercase letter:16
 Digits:3
 Special Character:5.
+// Task NO:30.
+// Swap first and last word of a sentence.
+	public static String swapfirstAndLastword(String sentence) {
+		String[]words=sentence.split("\\s+");
+		if(words.length<2) {
+			return sentence;
+		}
+		String temp=words[0];
+		words[0]=words[words.length-1];
+		words[words.length-1]=temp;
+		return String.join("", words);
+	}
+	public static void main (String[] args) {
+		String sentence="Python is a programing language";
+		String result=swapfirstAndLastword(sentence);
+		System.out.println("original sentence:"+sentence);
+		System.out.println("Modified sentence:"+result);
+		
+}}
+(OUTPUT)=>original sentence:Python is a programing language
+Modified sentence:languageisaprogramingPython.
