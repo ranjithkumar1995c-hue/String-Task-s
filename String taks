@@ -679,3 +679,35 @@ a1b1c1.
 			System.out.println("No non repeating character found:");
 		}
         (OUTPUT)=>First non-repeating character:c.
+//Task No:29.
+//Count uppercase, lowercase, digits, special characters.
+	public static void countcharacters(String str) {
+		int uppercase=0;
+		int lowercase=0;
+		int digits=0;
+		int special=0;
+		for(char ch:str.toCharArray()){
+			if (Character.isUpperCase(ch)){
+				uppercase++;
+			}else if(Character.isLowerCase(ch)) {
+				lowercase++;
+			}else if(Character.isDigit(ch)) {
+				digits++;
+			}else {
+				special++;
+			}}
+		System.out.println("Uppercase letter:"+uppercase);
+		System.out.println("Lowercase letter:"+lowercase);
+		System.out.println("Digits:"+digits);
+		System.out.println("Special Character:"+special);
+	}	
+public static void main (String[] args) {
+    String str="Welcome Programming123@#%&";
+    countcharacters(str);
+//	System.out.println("Uppercase:"+S.toUpperCase());
+//	System.out.println("Lowercase:"+S.toLowerCase());
+}}
+(OUTPUT)=>Uppercase letter:2
+Lowercase letter:16
+Digits:3
+Special Character:5.
