@@ -598,3 +598,16 @@ After Removing'o':welcme
 	
 }}
 (OUTPUT)=>substring:a programming.
+
+// Task No:25.
+//Find longest substring without repeating characters.
+public static void main (String[] args) {
+	  String S="ranjith";
+      S=S+"sum";
+      String s="ranjith sum";
+  System.out.println("substring:"+s.substring(3,11));
+  System.out.println("substring:"+s.repeat(3));
+	
+}}
+(OUTPUT)=>substring:jith sum
+substring:ranjith sumranjith sumranjith sum
