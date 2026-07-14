@@ -656,3 +656,26 @@ a1b1c1.
 			System.out.println("The String are not rottion of each other.");
 		}
 		(OUTPUT)=>The String are rotation of each other.
+
+//Task No:28.
+//Find first non-repeating character.
+	public static char firstnonrepeating(String str) {
+		int[]count=new int[256];
+		for(char ch:str.toCharArray()) {
+			count[ch]++;
+		}
+        for(char ch:str.toCharArray()) {
+        	if(count[ch]==1) {
+        		return ch;
+        	}}
+        return'\0';
+	}
+	public static void main (String[] args) {
+		String str="aabbcdde";
+		char result=firstnonrepeating(str);
+		if(result!='\0') {
+			System.out.println("First non-repeating character:"+result);
+		}else {
+			System.out.println("No non repeating character found:");
+		}
+        (OUTPUT)=>First non-repeating character:c.
